@@ -24,4 +24,6 @@ npx skills add rulearena/elasticsearch-query --skill elasticsearch-query -g -a h
 
 安裝 skill 不會自動配置 MCP、安裝 Python 或建立認證。目前已通過 61 項隔離測試，使用虛構資料與模擬服務；另以僅含 `SKILL.md`、`scripts/`、`references/` 的副本通過初始化→查詢→盤點讀取流程；`tests/` 僅供開發維護，技能使用時不會執行。真實 ES／MCP 連線及服務端權限需在各使用者環境另外驗證。
 
+已用 `skills@1.7.6` 從 GitHub 在隔離環境完成 Claude Code、Codex、Pi、Hermes 四個目標的專案安裝，以及 Hermes 全域安裝；必要檔案與原始碼一致，安裝副本通過 9 組命令列驗證。此驗證不代表已在四種 Agent 中完成 AI 操作驗收。
+
 `setup.json` 使用第 3 版狀態，獨立綁定資料來源。`last_attempt` 記錄最近一次設定結果，`last_success` 保留最後成功驗證摘要。更新失敗會取消可用狀態；離線總覽、設備、索引與欄位查閱仍可讀歷史報告，並顯示最近失敗。缺少來源綁定的舊紀錄需重新執行 `setup`。
