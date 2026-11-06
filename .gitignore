@@ -1,0 +1,16 @@
+# Local working data.
+/.local/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Credentials and environment files; allow explicit examples.
+.env
+.env.*
+*.env
+*.env.*
+!.env.example
+!*.env.example
+
+.DS_Store
